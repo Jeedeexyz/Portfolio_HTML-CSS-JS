@@ -7,16 +7,18 @@ body {
   display: grid;
   grid-template-areas: "nav nav nav"
                        "main main main"
-                        ;
+                       "foot foot foot";
 }
 
 /* Nav Bar */
 
 .navBar {
   grid-area: nav;
+  position: fixed;
   display: flex;
   gap: 55vw;
   font-size: 1.45vw;
+  z-index: 1;
 }
 .navBar img {
   width: 75px;
@@ -60,6 +62,11 @@ body {
     color: black;
 }
 
+.hero-section {
+  position: relative;
+  top: 100px;
+}
+
 /* Main Section */
 
 .main {
@@ -92,4 +99,11 @@ padding: 70px 0 30px;
 .description h2 {
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* footer section */
+
+footer{
+  grid-area: foot;
 }
