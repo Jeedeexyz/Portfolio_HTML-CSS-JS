@@ -3,20 +3,20 @@
 }
 
 /* Grid Layout */
-body {
+.grid {
   display: grid;
-  grid-template-areas: "nav nav nav"
-                       "main main main"
-                       "foot foot foot";
+  grid-template-areas: "nav"
+                       "main"
+                       "foot" ;
+  gap: 20px;            
 }
 
 /* Nav Bar */
 
 .navBar {
   grid-area: nav;
-  position: fixed;
   display: flex;
-  gap: 55vw;
+  gap: 53.5vw;
   font-size: 1.45vw;
   z-index: 1;
 }
@@ -40,13 +40,30 @@ body {
   width: 10vw;
   font-size:1.25vw ;
   font-weight: 400;
-  color: seashell;
-  background-color: #D83F31;
-  border: none;
-  transition: font-size .15s, width .15s ;
+  color: black;
+  background-color: transparent;
+  border:1px solid #EE9322;
+  transition: font-size .15s, width .15s,background-color .15s ;
+position: relative;
+overflow: hidden;
+
+}
+
+.navBar button::after {
+  content:"";
+  position: absolute;
+  background-color: #EE9322;
+  width:0;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: -1;
+  transition: all .25s;
+}
+.navBar button:hover:after{
+  width:100%;
 }
 .navBar button:hover{
-    background-color: #EE9322;
     color: black;
     font-size:1.35vw ;
     width:10.15vw;
@@ -62,10 +79,6 @@ body {
     color: black;
 }
 
-.hero-section {
-  position: relative;
-  top: 100px;
-}
 
 /* Main Section */
 
@@ -84,6 +97,9 @@ align-items: center;
 padding: 70px 0 30px;
 }
 
+.hero-section{
+  text-align: center;
+}
 /* About me */
 .description {
     text-align: center;
@@ -104,6 +120,34 @@ padding: 70px 0 30px;
 
 /* footer section */
 
-footer{
+.footer{
   grid-area: foot;
+  padding: 0 0 60px;
+background-color: #E9B824;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+margin-top: 50px;
+}
+
+.footer li {
+ display: inline;
+ font-size: 35px;
+ margin: 40px;
+ transition: font-size .2s, transform .6s;
+}
+.footer li:hover{
+  font-size: 45px;
+  transform:rotateY(360deg);
+}
+.footer ul{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer h2{
+  margin-top: 20px;
 }
