@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+/* Grid Layout */
+body {
+  display: grid;
+  grid-template-areas: "nav nav nav"
+                       "main main main"
+                        ;
+}
+
+/* Nav Bar */
+
+.navBar {
+  grid-area: nav;
+  display: flex;
+  gap: 55vw;
+  font-size: 1.45vw;
+}
+.navBar img {
+  width: 75px;
+  height: 75px;
+}
+.navBar ul {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.navBar li {
+  display: inline;
+  padding-right: 2.15vw;
+}
+.navBar button {
+  margin-right: 1vw;
+  padding: .7vw 1.15vw;
+  border-radius: 35px;
+  width: 10vw;
+  font-size:1.25vw ;
+  font-weight: 400;
+  color: seashell;
+  background-color: #D83F31;
+  border: none;
+  transition: font-size .15s, width .15s ;
+}
+.navBar button:hover{
+    background-color: #EE9322;
+    color: black;
+    font-size:1.35vw ;
+    width:10.15vw;
+}
+.navBar i {
+  display: none;
+}
+.navBar a:visited{
+    color: black;
+}
+.navBar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Section */
+
+.main {
+grid-area: main;
+display:flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.main img {
+    height: 290px;
+    width: 290px;
+padding: 70px 0 30px;
+}
+
+/* About me */
+.description {
+    text-align: center;
+}
+.description span {
+    color: #EE9322;
+    font-style: italic;
+}
+.description h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+.description h2 {
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

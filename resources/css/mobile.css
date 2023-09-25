@@ -1,0 +1,21 @@
+/* Nav Bar */
+
+.navBar {
+    gap:55vw;
+  
+}
+
+.navBar li {
+    display: none;
+}
+.navBar button{
+    display:none;
+}
+.navBar img{
+    height: 110px;
+    width: 110px;
+}
+.navBar i {
+    display: block;
+    font-size: 7vw;
+}
