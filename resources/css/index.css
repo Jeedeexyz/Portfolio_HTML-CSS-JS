@@ -16,7 +16,7 @@
 .navBar {
   grid-area: nav;
   display: flex;
-  gap: 53.5vw;
+  gap: 52vw;
   font-size: 1.45vw;
   z-index: 1;
 }
@@ -28,10 +28,27 @@
   display: flex;
   align-items: center;
   font-weight: 600;
+  font-family: 'Gill Sans', sans-serif;
+  text-align: center;
 }
 .navBar li {
   display: inline;
-  padding-right: 2.15vw;
+  padding-right: 0vw;
+  position: relative;
+  margin: 17px ;
+}
+.navBar li::after{
+  content: "";
+  position: absolute;
+  background-color: #EE9322;
+  height: 3px;
+  width: 0;
+  right:0;
+  bottom: -8px;
+  transition: 0.25s;
+}
+.navBar li:hover:after {
+  width: 100%;
 }
 .navBar button {
   margin-right: 1vw;
@@ -155,7 +172,7 @@ margin-top: 50px;
 
 /* about me page */
 #about-page {
-  background-image:  linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url("/resources/Images/about.jpeg");
+  background-image:  linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url("/resources/Images/about.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -180,4 +197,5 @@ margin-bottom: -110px;
   color: black;
   font-style: italic;
   font-weight: 700;
+  font-family: monospace;
 }
