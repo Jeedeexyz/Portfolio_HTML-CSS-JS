@@ -27,10 +27,6 @@ padding: 0  25px;
     border: 1px solid #e9b824;
 }
 
-/* .navBar ul {
-    display: none;
-} */
-
   #nav {
     display: flex;
     flex-direction: column;
@@ -42,7 +38,7 @@ padding: 0  25px;
     text-align: center;
     background-color: #e9b824f1;
     font-size: 22px;
-    transition: all .25s;
+    transition: all .45s;
 }
 .navBar li {
     display: block;
@@ -64,6 +60,7 @@ padding: 0  25px;
 .main {
     top: 95px;
     margin-bottom: 70px;
+    height: auto;
 }
 /* footer section */
 .footer{
@@ -72,5 +69,7 @@ padding: 0  25px;
 
 
 
-/* About page */
-
+/* Portfolio page */
+.flex {
+    height: auto;
+}

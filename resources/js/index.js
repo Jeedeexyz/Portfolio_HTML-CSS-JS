@@ -1,5 +1,5 @@
 
-
+// For nav bar
 const icon = document.querySelector("#dropDown")
 
 icon.addEventListener("click",()=>{
@@ -7,7 +7,17 @@ icon.addEventListener("click",()=>{
     document.querySelector("#nav").classList.toggle("show")
 })
 
+// for card details
 
-// $("#nav li").click(()=>{
-//     $("#nav").toggle("hide")
-// })
+const card = document.querySelectorAll(".item")
+
+for(let i=0;i< card.length;i++){
+card[i].addEventListener("mouseenter",()=>{
+    document.querySelectorAll("#card-detail")[i].classList.toggle("visible")
+})
+card[i].addEventListener("mouseleave",()=>{
+    document.querySelectorAll("#card-detail")[i].classList.toggle("visible")
+})
+}
+
+
