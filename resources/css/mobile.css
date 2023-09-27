@@ -73,3 +73,10 @@ padding: 0  25px;
 .flex {
     height: auto;
 }
+
+
+/* about page */
+
+#about-page{
+    top:120px;
+}
