@@ -24,18 +24,22 @@
 margin-right: 30px;
 }
 
+/* .navBar ul {
+    display: none;
+} */
 
-.navBar ul {
+  #nav {
     display: flex;
     flex-direction: column;
     position: fixed;
     height: 100vh;
     width: 100%;
     top: 113px;
-    left: 0;
+    left: -120%;
     text-align: center;
     background-color: #e9b824;
     font-size: 22px;
+    transition: all .25s;
 }
 .navBar li {
     display: block;
@@ -49,8 +53,8 @@ margin-right: 30px;
     width: 110%;
     font-size: 22px;
 }
-.navBar .hide{
-   display: none;
+ #nav.show {
+   left:0;
 }
 /* Intro section */
 
@@ -58,3 +62,13 @@ margin-right: 30px;
     top: 95px;
     margin-bottom: 70px;
 }
+/* footer section */
+.footer{
+    position: relative;
+    top: 150px;
+}
+
+
+
+/* About page */
+
