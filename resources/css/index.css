@@ -393,7 +393,7 @@ form textarea {
   gap: 25px;
 }
 .card1 {
-  background-image: url("/resources/Images/ecomerce.jpeg");
+  background-image: url("../Images/ecomerce.jpeg");
   height: 234px;
   width: 350px;
   background-repeat: no-repeat;
@@ -401,7 +401,7 @@ form textarea {
   background-position: center;
 }
 .card2 {
-  background-image: url("/resources/Images/landing.jpeg");
+  background-image: url("../Images/landing.jpeg");
   height: 234px;
   width: 350px;
   background-repeat: no-repeat;
@@ -409,7 +409,7 @@ form textarea {
   background-position: center;
 }
 .card3 {
-  background-image: url("/resources/Images/diceGame.jpeg");
+  background-image: url("../Images/diceGame.jpeg");
   height: 234px;
   width: 350px;
   background-repeat: no-repeat;
@@ -417,7 +417,7 @@ form textarea {
   background-position: center;
 }
 .card4 {
-  background-image: url("/resources/Images/simonGame.jpeg");
+  background-image: url("../Images/simonGame.jpeg");
   height: 234px;
   width: 350px;
   background-repeat: no-repeat;
@@ -425,7 +425,7 @@ form textarea {
   background-position: center;
 }
 .card5 {
-  background-image: url("/resources/Images/portfolio.jpeg");
+  background-image: url("../Images/portfolio.jpeg");
   height: 234px;
   width: 350px;
   background-repeat: no-repeat;
